@@ -4,8 +4,13 @@
   </head>
   <endpoints>
     <endpoint>
-      <path>/entitlements</path>
+      <path>/entitlements/</path>
       <policy>mypolicy</policy>
+      <method>GET</method>
+    </endpoint>
+    <endpoint>
+      <path>/new</path>
+      <policy>new_policy</policy>
       <method>GET</method>
     </endpoint>
     <endpoint>
@@ -17,6 +22,11 @@
       <path>/subscriptions</path>
       <policy>other_policy</policy>
       <method>GET</method>
+    </endpoint>
+    <endpoint>
+      <path>/subscriptions</path>
+      <policy>other_policy</policy>
+      <method>POST</method>
     </endpoint>
   </endpoints>
 </proxy>

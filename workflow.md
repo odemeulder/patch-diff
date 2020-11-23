@@ -2,8 +2,8 @@
 
 ## Create
 
-1. Generate files
-2. Manually modify files
+1. Generate files (`./generated/proxy.xml`)
+2. Manually modify files (`proxy.xml`)
 
 ## Update
 
@@ -14,25 +14,24 @@
 
 * generated
 * patches
-* final
+* .
 
-# Procedure
+# How it works
+
+Reset first (`/reset.sh`)
 
 ## Create
 
-1. Generate files
-2. Manually modify files
-3. Generate patch (through git diff)
+1. Generate files (`./init.sh`)
+2. Manually modify files 
+3. Generate patch (through git diff `./generate.sh`) 
 
 ## Update
 
-1. Generate files
-2. Apply patch
+1. Generate files (`./generate2.sh`)
+2. Apply patch (`./update.sh`)
+3. Create new patch (`/generates.sh`)
 
-### Update algorithm
-1. rm -rf generated/
-2. rm -rf final/
-3. generate
-4. apply patch
+
 
 
