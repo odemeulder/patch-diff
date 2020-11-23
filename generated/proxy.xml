@@ -1,8 +1,3 @@
-#!/bin/bash
-
-FILE="./generated/proxy.xml"
-
-/bin/cat <<EOM >$FILE
 <proxy>
   <head>
     <meta>Some general info</meta>
@@ -25,7 +20,3 @@ FILE="./generated/proxy.xml"
     </endpoint>
   </endpoints>
 </proxy>
-EOM
-
-
-

@@ -1,0 +1,25 @@
+--- ./generated/proxy.xml	2020-11-22 20:33:08.000000000 -0500
++++ proxy.xml	2020-11-22 20:40:54.000000000 -0500
+@@ -1,16 +1,21 @@
+ <proxy>
+   <head>
+     <meta>Some general info</meta>
++    <products>
++      <key>Sugar</key>
++      <key>MyAccount</key>
++    </products>
+   </head>
+   <endpoints>
+     <endpoint>
+       <path>/entitlements</path>
+       <policy>mypolicy</policy>
+       <method>GET</method>
++      <custom>Some manual customization</custom>
+     </endpoint>
+     <endpoint>
+       <path>/entitlements</path>
+-      <policy>custom_policy</policy>
++      <policy>overriden policy</policy>
+       <method>POST</method>
+     </endpoint>
+     <endpoint>
